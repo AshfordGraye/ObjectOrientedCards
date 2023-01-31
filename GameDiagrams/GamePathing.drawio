@@ -1,0 +1,55 @@
+<mxfile host="65bd71144e">
+    <diagram id="j42BhyTkV39cocvEV0Nj" name="Page-1">
+        <mxGraphModel dx="258" dy="853" grid="1" gridSize="10" guides="1" tooltips="0" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="37" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="29" target="31" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="Start" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="30" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="31" target="40" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="Player gets 2 cards" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="140" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="38" target="45" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="Dealer gets 2 cards" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="430" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="40" target="42" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="PlayerTotal = PlayerCard1+ PlayerCard2" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="230" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="42" target="38" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="Output: PlayerTotal" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="345" y="320" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="45" target="47" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="Output: DealerCard 1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="530" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="47" target="49" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="DealerTotal&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="630" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="End" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="730" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

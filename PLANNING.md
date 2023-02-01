@@ -12,3 +12,16 @@ Steps for teaching:
 4) deal a deck  
     4.5) figure out how to make card 21 in python
 5) how to make card 21 - will split further into steps as steps become understood.
+
+
+
+
+STEP 1 COMPLETE - 
+
+    PDF WRITTEN AND NEEDS TESTING FOR NEEDED CHANGES
+
+STEP 2 COMPLETE - 
+    
+    TXT CONTAINS BASIC STEPS TO FOLLOW FOR GUIDE CREATION 
+
+STEP 3 IN PROGRESS

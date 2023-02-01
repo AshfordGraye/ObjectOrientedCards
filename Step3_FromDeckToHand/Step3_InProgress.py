@@ -69,8 +69,30 @@ class Deck:
         #and so the cards list will equal the cards!
         self._cards = cards
 
+# mycard = Card("Spades", "Ace")
+# print (mycard)
+# print (mycard._value)
+
 # initialise a deck of Cards
 mydeck = Deck()
+
+# Printing the Deck
+def ShowTheDeck():
+    print (f"The deck has: {str(mydeck._cards)} \n")
+
+# Shuffling the Deck
+def ShuffleTheDeck():
+    for i in range(len(mydeck._cards)-1, 0, -1):
+        
+        # Pick a random index from 0 to i
+        j = random.randint(0, i + 1)
+    
+        # Swap arr[i] with the element at random index
+        mydeck._cards[i], mydeck._cards[j] = mydeck._cards[j], mydeck._cards[i]
+
+# ShowTheDeck()
+# ShuffleTheDeck()
+# ShowTheDeck()
 
 # initialise a Hand object
 class Hand:
@@ -82,24 +104,14 @@ class Hand:
 playerhand = Hand(0)
 dealerhand = Hand(0)
 
-
-def ShuffleTheDeck():
-    for i in range(len(mydeck._cards)-1, 0, -1):
-        
-        # Pick a random index from 0 to i
-        j = random.randint(0, i + 1)
-    
-        # Swap arr[i] with the element at random index
-        mydeck._cards[i], mydeck._cards[j] = mydeck._cards[j], mydeck._cards[i]
-     
-# Printing shuffled list
-def ShuffleAndShow():
-    print (f"The deck has: {str(mydeck._cards)} \n")
-    ShuffleTheDeck()
-    print (f"The shuffled deck has: {str(mydeck._cards)} \n") 
-
-
-
 def Deal():
     takencard = mydeck._cards.pop (3)
-    print (takencard.value)
+    print (takencard)
+    print (f"card value is {takencard._value}")
+    playerhand.handvalue += takencard._value
+
+ShuffleTheDeck()
+Deal()
+print (f"hand is now worth {playerhand.handvalue}")
+Deal()
+print (f"hand is now worth {playerhand.handvalue}")

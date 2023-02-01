@@ -80,6 +80,7 @@ mydeck = Deck()
 def ShowTheDeck():
     print (f"The deck has: {str(mydeck._cards)} \n")
 
+# Shuffling the Deck
 def ShuffleTheDeck():
     for i in range(len(mydeck._cards)-1, 0, -1):
         

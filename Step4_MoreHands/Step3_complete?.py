@@ -106,18 +106,18 @@ class Hand:
 myhand = Hand(0)
 
 #step 3
-def MyDeal(): #create a method to deal the card
+def Deal(): #create a method to deal the card
     takencard = mydeck._cards.pop (0) #pop the card from the list so we can hold it in memory to pull the value
     myhand.handvalue += takencard._value # increase the value of the hand by the value of the card
     myhand.cards.append(takencard)
 
-def ShowMyHand():
+def ShowHand():
     print (f"I have {myhand.cards} in my hand")
     print (f"my hand is now worth {myhand.handvalue}") #show hand value 
 
 # Let's test it!
 ShuffleTheDeck() #always shuffle the deck before dealing!
-MyDeal() # deal a card
-ShowMyHand()
-MyDeal()
-ShowMyHand()
+Deal() # deal a card
+ShowHand()
+Deal()
+ShowHand()

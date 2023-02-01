@@ -66,3 +66,7 @@ class Deck:
                 cards.append (Card(suit,number))
         #and so the cards list will equal the cards!
         self._cards = cards
+
+mycard = Card("Spades", "Ace")
+print (mycard)
+print (mycard._value)

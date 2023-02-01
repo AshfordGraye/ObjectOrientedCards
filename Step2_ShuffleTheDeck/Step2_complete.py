@@ -69,8 +69,16 @@ class Deck:
         #and so the cards list will equal the cards!
         self._cards = cards
 
+# mycard = Card("Spades", "Ace")
+# print (mycard)
+# print (mycard._value)
+
 # initialise a deck of Cards
 mydeck = Deck()
+
+# Printing the Deck
+def ShowTheDeck():
+    print (f"The deck has: {str(mydeck._cards)} \n")
 
 def ShuffleTheDeck():
     for i in range(len(mydeck._cards)-1, 0, -1):
@@ -80,7 +88,7 @@ def ShuffleTheDeck():
     
         # Swap arr[i] with the element at random index
         mydeck._cards[i], mydeck._cards[j] = mydeck._cards[j], mydeck._cards[i]
-     
-# Printing shuffled list
-def ShowTheDeck():
-    print (f"The deck has: {str(mydeck._cards)} \n")
+
+ShowTheDeck()
+ShuffleTheDeck()
+ShowTheDeck()

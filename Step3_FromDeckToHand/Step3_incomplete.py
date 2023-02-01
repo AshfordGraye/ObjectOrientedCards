@@ -1,14 +1,22 @@
+import random
+
 class Card:
 
     #initalised with the card
     def __init__(self, suit, number):
         self._suit = suit
         self._number = number
+        if self._number in [str(n) for n in range (2,11)]:
+            self._value = int(number)
+        elif self._number in ["Jack","Queen","King"]:
+            self._value = 10
+        elif self.number in ["Ace"]:
+            self._value = 1
 
 
     #how the card is represented on screen
     def __repr__(self):
-        return self._number + " of " + self._suit
+        return (f"{self._number} of {self.suit}")
     
     #defines the card's suit as a property of the card class
     @property
@@ -31,7 +39,9 @@ class Card:
     # this setter checks to see if the assigned card is real
     @number.setter
     def number (self, number):
-        if number in  [str(n) for n in range (2,11)] + ["Jack","Queen","King","Ace"]:
+        if number in  [str(n) for n in range (2,11)]:
+            self._number = number
+        elif number in ["Jack","Queen","King","Ace"]:
             self._number = number
         else:
             print ("That isn't a real card!")
@@ -42,7 +52,6 @@ class Deck:
     def __init__(self):
         self._cards = []
         self.populate()
-        print (self._cards)
     #function called during init to create instance of the cards
     def populate (self):
         #define the suits and cards to populate the deck with (Is this how fictional card games like Pazaak were created?)
@@ -59,3 +68,38 @@ class Deck:
                 cards.append (Card(suit,number))
         #and so the cards list will equal the cards!
         self._cards = cards
+
+# initialise a deck of Cards
+mydeck = Deck()
+
+# initialise a Hand object
+class Hand:
+    def __init__(self, handvalue):
+        self.cards = []
+        self.handvalue = handvalue
+
+#create two hands for the deck to go into
+playerhand = Hand(0)
+dealerhand = Hand(0)
+
+
+def ShuffleTheDeck():
+    for i in range(len(mydeck._cards)-1, 0, -1):
+        
+        # Pick a random index from 0 to i
+        j = random.randint(0, i + 1)
+    
+        # Swap arr[i] with the element at random index
+        mydeck._cards[i], mydeck._cards[j] = mydeck._cards[j], mydeck._cards[i]
+     
+# Printing shuffled list
+def ShuffleAndShow():
+    print (f"The deck has: {str(mydeck._cards)} \n")
+    ShuffleTheDeck()
+    print (f"The shuffled deck has: {str(mydeck._cards)} \n") 
+
+
+
+def Deal():
+    takencard = mydeck._cards.pop (3)
+    print (takencard.value)

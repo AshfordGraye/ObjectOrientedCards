@@ -7,11 +7,11 @@ class Card:
         self._suit = suit
         self._number = number
         if self._number in [str(n) for n in range (2,11)]:
-            self.value = int(number)
+            self._value = int(number)
         elif self._number in ["Jack","Queen","King"]:
-            self.value = 10
+            self._value = 10
         elif self.number in ["Ace"]:
-            self.value = 1
+            self._value = 1
 
 
     #how the card is represented on screen
@@ -52,7 +52,6 @@ class Deck:
     def __init__(self):
         self._cards = []
         self.populate()
-        # print (self._cards)
     #function called during init to create instance of the cards
     def populate (self):
         #define the suits and cards to populate the deck with (Is this how fictional card games like Pazaak were created?)
@@ -70,35 +69,18 @@ class Deck:
         #and so the cards list will equal the cards!
         self._cards = cards
 
+# initialise a deck of Cards
 mydeck = Deck()
 
-# Printing original list
-# print (mydeck._cards)
- 
-for i in range(len(mydeck._cards)-1, 0, -1):
-     
-    # Pick a random index from 0 to i
-    j = random.randint(0, i + 1)
-   
-    # Swap arr[i] with the element at random index
-    mydeck._cards[i], mydeck._cards[j] = mydeck._cards[j], mydeck._cards[i]
+def ShuffleTheDeck():
+    for i in range(len(mydeck._cards)-1, 0, -1):
+        
+        # Pick a random index from 0 to i
+        j = random.randint(0, i + 1)
+    
+        # Swap arr[i] with the element at random index
+        mydeck._cards[i], mydeck._cards[j] = mydeck._cards[j], mydeck._cards[i]
      
 # Printing shuffled list
-print ("The shuffled list is : " +  str(mydeck._cards)) 
-
-class Hand:
-    def __init__(self, handvalue):
-        self.cards = []
-        self.handvalue = handvalue
-
-playerhand = Hand(0)
-dealerhand = Hand(0)
-
-takencard = mydeck._cards.pop (3)
-print (takencard.value)
-
-
-# mycard = Card("Spades","King")
-# print (mycard)
-# print (mycard.value)
-
+def ShowTheDeck():
+    print (f"The deck has: {str(mydeck._cards)} \n")

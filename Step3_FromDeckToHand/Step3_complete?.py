@@ -69,20 +69,18 @@ class Deck:
         #and so the cards list will equal the cards!
         self._cards = cards
 
+# mycard = Card("Spades", "Ace")
+# print (mycard)
+# print (mycard._value)
+
 # initialise a deck of Cards
 mydeck = Deck()
 
-# initialise a Hand object
-class Hand:
-    def __init__(self, handvalue):
-        self.cards = []
-        self.handvalue = handvalue
+# Printing the Deck
+def ShowTheDeck():
+    print (f"The deck has: {str(mydeck._cards)} \n")
 
-#create two hands for the deck to go into
-playerhand = Hand(0)
-dealerhand = Hand(0)
-
-
+# Shuffling the Deck
 def ShuffleTheDeck():
     for i in range(len(mydeck._cards)-1, 0, -1):
         
@@ -91,15 +89,35 @@ def ShuffleTheDeck():
     
         # Swap arr[i] with the element at random index
         mydeck._cards[i], mydeck._cards[j] = mydeck._cards[j], mydeck._cards[i]
-     
-# Printing shuffled list
-def ShuffleAndShow():
-    print (f"The deck has: {str(mydeck._cards)} \n")
-    ShuffleTheDeck()
-    print (f"The shuffled deck has: {str(mydeck._cards)} \n") 
 
+# ShowTheDeck()
+# ShuffleTheDeck()
+# ShowTheDeck()
 
+# sstep 1
+# initialise a Hand object
+class Hand:
+    def __init__(self, handvalue): #tell it to have self referential hand value
+        self.cards = []
+        self.handvalue = handvalue
 
-def Deal():
-    takencard = mydeck._cards.pop (3)
-    print (takencard.value)
+#step 2
+#create a hand for the cards to go into - remember the hand is  worth 0 when starting a game!
+myhand = Hand(0)
+
+#step 3
+def Deal(): #create a method to deal the card
+    takencard = mydeck._cards.pop (0) #pop the card from the list so we can hold it in memory to pull the value
+    myhand.handvalue += takencard._value # increase the value of the hand by the value of the card
+    myhand.cards.append(takencard)
+
+def ShowHand():
+    print (f"I have {myhand.cards} in my hand")
+    print (f"my hand is now worth {myhand.handvalue}") #show hand value 
+
+# Let's test it!
+ShuffleTheDeck() #always shuffle the deck before dealing!
+Deal() # deal a card
+ShowHand()
+Deal()
+ShowHand()

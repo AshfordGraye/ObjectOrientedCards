@@ -1,0 +1,9 @@
+1: remove the print statement fromt the original project - you know the cards are there and do not need the game to print an entire deck of cards on screen every time you play (MIGHT MOVE THAT BACK TO THE PREVIOUS STEP TUTORIAL SINCE IT STILL APPLIES) 
+2: create a deck:
+    code in project on line 73
+3: create a method to shuffle the deck - this allows us to shuffle the deck more than once per game, and every time a new deck is created.
+    - PLEASE SEE TUTOR ABOUT HOW IT WORKS COS ITS AN ALGORITHM I CANT QUITE GET ME HEAD ROUND YET, TOO BUSY RN LOL
+    - code from lines 75-82
+4: create method to show the two decks. also must explain how f strings work as was not covered in previous rpf project 
+    -code lines 85-88
+5: run ShowTheDecks to show that the original deck has been shuffled - note that the call in the f string is the same object therefore is the same deck etc etc 

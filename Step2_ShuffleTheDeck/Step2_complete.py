@@ -82,7 +82,5 @@ def ShuffleTheDeck():
         mydeck._cards[i], mydeck._cards[j] = mydeck._cards[j], mydeck._cards[i]
      
 # Printing shuffled list
-def ShowTheDecks():
+def ShowTheDeck():
     print (f"The deck has: {str(mydeck._cards)} \n")
-    ShuffleTheDeck()
-    print (f"The shuffled deck has: {str(mydeck._cards)} \n") 

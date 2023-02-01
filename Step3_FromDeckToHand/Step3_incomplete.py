@@ -52,7 +52,6 @@ class Deck:
     def __init__(self):
         self._cards = []
         self.populate()
-        print (self._cards)
     #function called during init to create instance of the cards
     def populate (self):
         #define the suits and cards to populate the deck with (Is this how fictional card games like Pazaak were created?)
@@ -70,18 +69,37 @@ class Deck:
         #and so the cards list will equal the cards!
         self._cards = cards
 
+# initialise a deck of Cards
 mydeck = Deck()
 
-# Printing original list
-print (mydeck._cards)
- 
-for i in range(len(mydeck._cards)-1, 0, -1):
-     
-    # Pick a random index from 0 to i
-    j = random.randint(0, i + 1)
-   
-    # Swap arr[i] with the element at random index
-    mydeck._cards[i], mydeck._cards[j] = mydeck._cards[j], mydeck._cards[i]
+# initialise a Hand object
+class Hand:
+    def __init__(self, handvalue):
+        self.cards = []
+        self.handvalue = handvalue
+
+#create two hands for the deck to go into
+playerhand = Hand(0)
+dealerhand = Hand(0)
+
+
+def ShuffleTheDeck():
+    for i in range(len(mydeck._cards)-1, 0, -1):
+        
+        # Pick a random index from 0 to i
+        j = random.randint(0, i + 1)
+    
+        # Swap arr[i] with the element at random index
+        mydeck._cards[i], mydeck._cards[j] = mydeck._cards[j], mydeck._cards[i]
      
 # Printing shuffled list
-print ("The shuffled list is : " +  str(mydeck._cards)) 
+def ShuffleAndShow():
+    print (f"The deck has: {str(mydeck._cards)} \n")
+    ShuffleTheDeck()
+    print (f"The shuffled deck has: {str(mydeck._cards)} \n") 
+
+
+
+def Deal():
+    takencard = mydeck._cards.pop (3)
+    print (takencard.value)

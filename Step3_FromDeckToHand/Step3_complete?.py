@@ -94,24 +94,30 @@ def ShuffleTheDeck():
 # ShuffleTheDeck()
 # ShowTheDeck()
 
+# sstep 1
 # initialise a Hand object
 class Hand:
-    def __init__(self, handvalue):
+    def __init__(self, handvalue): #tell it to have self referential hand value
         self.cards = []
         self.handvalue = handvalue
 
-#create two hands for the deck to go into
-playerhand = Hand(0)
-dealerhand = Hand(0)
+#step 2
+#create a hand for the cards to go into - remember the hand is  worth 0 when starting a game!
+myhand = Hand(0)
 
-def Deal():
-    takencard = mydeck._cards.pop (3)
-    print (takencard)
-    print (f"card value is {takencard._value}")
-    playerhand.handvalue += takencard._value
+#step 3
+def Deal(): #create a method to deal the card
+    takencard = mydeck._cards.pop (0) #pop the card from the list so we can hold it in memory to pull the value
+    myhand.handvalue += takencard._value # increase the value of the hand by the value of the card
+    myhand.cards.append(takencard)
 
-ShuffleTheDeck()
+def ShowHand():
+    print (f"I have {myhand.cards} in my hand")
+    print (f"my hand is now worth {myhand.handvalue}") #show hand value 
+
+# Let's test it!
+ShuffleTheDeck() #always shuffle the deck before dealing!
+Deal() # deal a card
+ShowHand()
 Deal()
-print (f"hand is now worth {playerhand.handvalue}")
-Deal()
-print (f"hand is now worth {playerhand.handvalue}")
+ShowHand()

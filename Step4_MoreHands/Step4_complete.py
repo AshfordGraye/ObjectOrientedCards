@@ -127,9 +127,9 @@ def ShowDealerTopCard():
 
 # Let's test it!
 ShuffleTheDeck() #always shuffle the deck before dealing!
-for i in 2:
+for i in (1,2):
     MyDeal()
 ShowMyHand()
-for i in 2:
+for i in (1,2):
     DealerDeal()
 ShowDealerTopCard()

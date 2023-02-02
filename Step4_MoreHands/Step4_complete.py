@@ -104,7 +104,7 @@ class Hand:
 #step 2
 #create a hand for the cards to go into - remember the hand is  worth 0 when starting a game!
 myhand = Hand(0)
-dealerhand = Hand(0)
+otherhand = Hand(0)
 
 #step 3
 def MyDeal(): #create a method to deal the card
@@ -112,18 +112,18 @@ def MyDeal(): #create a method to deal the card
     myhand.handvalue += takencard._value # increase the value of the hand by the value of the card
     myhand.cards.append(takencard)
 
-def DealerDeal():
+def OtherDeal():
     takencard = mydeck._cards.pop (0) #pop the card from the list so we can hold it in memory to pull the value
-    dealerhand.handvalue += takencard._value # increase the value of the hand by the value of the card
-    dealerhand.cards.append(takencard)
+    otherhand.handvalue += takencard._value # increase the value of the hand by the value of the card
+    otherhand.cards.append(takencard)
 
 def ShowMyHand():
     print (f"I have {myhand.cards} in my hand")
     print (f"my hand is now worth {myhand.handvalue}\n") #show hand value 
 
-def ShowDealerTopCard():
-    print (f"The first card in the dealer's hand is {dealerhand.cards[0]}")
-    print (f"and this string shows theyve got two cards cos the handvalue is {dealerhand.handvalue} \n")
+def ShowOtherHand():
+    print (f"The cards in the  other hand are {otherhand.cards}")
+    print (f"The value of the other hand is {otherhand.handvalue} \n")
 
 # Let's test it!
 ShuffleTheDeck() #always shuffle the deck before dealing!
@@ -131,5 +131,5 @@ for i in (1,2):
     MyDeal()
 ShowMyHand()
 for i in (1,2):
-    DealerDeal()
-ShowDealerTopCard()
+    OtherDeal()
+ShowOtherHand()

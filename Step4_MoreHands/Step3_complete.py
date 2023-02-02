@@ -117,7 +117,7 @@ def ShowMyHand():
 
 # Let's test it!
 ShuffleTheDeck() #always shuffle the deck before dealing!
-MyDeal() # deal a card
-ShowMyHand()
-MyDeal()
-ShowMyHand()
+
+for i in (1,2):
+    MyDeal() # deal a card
+    ShowMyHand()

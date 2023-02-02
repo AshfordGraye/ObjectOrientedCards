@@ -1,6 +1,0 @@
-1 - add dealerhand object
-2 - Add another Deal function called DealerDeal that sends cards to the dealers hand
-    - code @ 115
-3 - Change ShowHand to ShowMyHand
-4 - Add ShowDealerTopCard function
-    - code @ 124

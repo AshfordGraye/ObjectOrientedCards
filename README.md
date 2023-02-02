@@ -8,14 +8,10 @@ TEAM TESTER		- LUKE CAMPBELL
 
 LEAD DEVELOPER	- ASHFORD RENNIE
 
-A project teaching how to use a previously created deck of cards in an Object Oriented Programming based game.
+A project teaching how to turn a previously created deck of cards into something that can be used in a game.
 
-This project will specifcally teach the user how to create a game of Card 21 using Object Oriented Programming. 
+This project will specifcally teach the student how to apply values to and how to influence objects using Object Oriented Programming. 
 
-It will include a completed version of a previously posted Raspberry Pi Foundation project as it's base to simulate the idea that user has already done the project.
+The 'Step By Step' folder includes step by step instructions with examples of where the student should be at the start and the end of each step.
 
-From there, the user will be guided through through steps required to convert the project into one suitable to use as a base for mathematics in card games.
-
-The user will then be guided through the steps required to create a game of Card 21 - explaining the concepts and procdures involved. 
-
-The guide itself will be available as a PDF with steps and screenshots to guide the user. 
+The 'Final Project Presentation' folder includes a copy of the original Raspberry Pi Foundation Project in its completed form, a completed form of our project, and a .pdf guide of all included steps. An included sample code area is at the bottom to demonstrate functionality taught in the project.

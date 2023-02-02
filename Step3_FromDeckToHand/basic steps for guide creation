@@ -1,6 +1,0 @@
-1: initialise a Hand object
-2: create a hand for the cards to go into - remember the hand is  worth 0 when starting a game!
-    -code @ 106
-3: create a method to deal the card
-    - code from 108
-4: then there's testing

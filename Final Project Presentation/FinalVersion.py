@@ -137,6 +137,7 @@ def ShowOtherHand():
 
 print ("\nPART 1 - GIVING THE CARDS VALUE")
 print()
+print("we will now create two card objects and assign them values to be printed below:")
 mycard = Card("Spades", "Ace")
 print (mycard)
 print (mycard._value)

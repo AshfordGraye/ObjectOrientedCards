@@ -168,3 +168,5 @@ ShowMyHand()
 for i in (1,2):
     OtherDeal()
 ShowOtherHand()
+print()
+input("This concludes the functionality presentation. Please press Enter to exit.")

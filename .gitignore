@@ -1,7 +1,0 @@
-#files
-*.DS_Store
-*.pages
-
-/GuideDocuments
-
-RunTesting.py

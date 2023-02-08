@@ -1,4 +1,5 @@
 import random
+from X_PRESENTATION_ONLY_TEXT_FORMATTING import *
 
 class Card:
 
@@ -133,11 +134,13 @@ def ShowOtherHand():
 ###############################################
 ##### FINAL STAGING AREA FOR PRESENTATION #####
 ###############################################
+#####################################################################################
+##### FOLLOWING CODE IS FOR PRESENTATION ONLY AND NOT PART OF THE FINAL PROGRAM #####
+#####################################################################################
 
 
-print ("\nPART 1 - GIVING THE CARDS VALUE")
-print()
-print("we will now create two card objects and assign them values to be printed below:")
+SectionTitle.write ("\nPART 1 - GIVING THE CARDS VALUE   \n")
+Speaking.write ("The first step of the guide instructs users on how to add integer values to cards in a deck so they may be used in a card game.    \nTo demonstrate, we will now create two card objects and assign them values to be printed below:  \n")
 mycard = Card("Spades", "Ace")
 print (mycard)
 print (mycard._value)
@@ -145,28 +148,30 @@ print()
 mycard2 = Card("Hearts", "Queen")
 print (mycard2)
 print (mycard2._value)
-print()
-print ("PART 2 - SHUFFLING THE DECK")
-print()
+Speaking.write ("\nAs we can see, the cards now have numerical values assigned to them.   \n\n")
+SectionTitle.write ("PART 2 - SHUFFLING THE DECK \n")
+Speaking.write ("Every card game needs the deck to be shuffled first. Since the cards have been populated into the deck in order, Step 2 instructs users on how they can shuffle the card objects in the deck. \nFirst, we will show the populated deck, then shuffle it.    \n")
 ShowTheDeck()
 ShuffleTheDeck()
-print ("SHUFFLING...    \n")
+SectionTitle.write ("SHUFFLING...    \n")
+Speaking.write ("Now, we show the shuffled cards below:   \n")
 ShowTheDeck()
-print (f"Note the first card in the deck is {mydeck._cards[0]}")
+Speaking.write (f"Note the first and second cards in the deck are now the {mydeck._cards[0]} and {mydeck._cards[1]}.")
 print()
-print("PART 3 - MOVE CARDS FROM THE DECK TO THE HAND    \n")
-print("Let's move the first card in the now shuffled deck to the hand \n")
+SectionTitle.write("PART 3 - MOVE CARDS FROM THE DECK TO THE HAND    \n")
+Speaking.write ("Step 3 instructs users on how to move objects from one place to another, and how to count the values being added. \nTo demonstrate, we will move two cards from the deck we just shuffled into the user's hand, and show the total value of the hand below each time.  \n")
 MyDeal()
 ShowMyHand()
-print(f"To prove the card has been moved, here is the deck - notice the {myhand.cards[0]} has now gone! \n")
-ShowTheDeck()
-print()
-print("PART 4 - ADDING MORE HANDS TO DEAL TO    \n")
-print ("Lastly, we will create a second hand to deal to. Then, we'll take add one more card to our hand, and deal two to the other hand.    \n")#     MyDeal()
+Speaking.write ("and again:\n")
 MyDeal()
 ShowMyHand()
+Speaking.write(f"To prove the card has been moved, here is the deck - the {myhand.cards[0]} and {myhand.cards[1]} have now gone! \n")
+ShowTheDeck()
+SectionTitle.write ("PART 4 - ADDING MORE HANDS TO DEAL TO    \n")
+Speaking.write ("Lastly, we will create a second hand to deal to. Then, we'll deal two more cards from the deck to the other hand.    \n")
 for i in (1,2):
     OtherDeal()
 ShowOtherHand()
-print()
-input("This concludes the functionality presentation. Please press Enter to exit.")
+Speaking.write ("Because the deck has already dealt two cards to the user's hand, the hand still shows like show:")
+ShowMyHand()
+SectionTitle.write("This concludes the functionality presentation. Please press Enter to exit.")

@@ -13,6 +13,6 @@
 >
 > **We will teach the user how to apply values onto the cards within that deck, and how to influence the cards within the deck - first by shuffling the deck, then by dealing the cards into a player hand.**
 
-*The 'Step By Step' folder includes step by step instructions with examples of where the student should be at the start and the end of each step.*
+- *The 'Step By Step' folder includes step by step instructions with examples of where the student should be at the start and the end of each step.*
 
-*The 'Final Project Presentation' folder includes a copy of the original Raspberry Pi Foundation Project in its completed form, a completed form of our project, and a .pdf guide of all included steps. An included sample code area is at the bottom to demonstrate functionality taught in the project.*
+- *The 'Final Project Presentation' folder includes a copy of the original Raspberry Pi Foundation Project in its completed form, a completed form of our project, and a .pdf guide of all included steps. An included sample code area is at the bottom to demonstrate functionality taught in the project.*

@@ -9,9 +9,9 @@
 * **Lead Dev**  - Ashford Rennie
 
 
-> **This project springboards from a pre-existing RPF project that teaches the user how to create the deck of cards using Object Oriented Programming.**
+> **This project springboards from a pre-existing RPF project that teaches users how to create a deck of cards using Object Oriented Programming.**
 >
-> **We will teach the user how to apply values onto the cards within that deck, and how to influence the cards within the deck - first by shuffling the deck, then by dealing the cards into a player hand.**
+> **We will teach users how to apply values onto the cards within that deck, and how to influence the cards within the deck - first by shuffling the deck, then by dealing the cards into a player hand.**
 
 - *The 'Step By Step' folder includes step by step instructions with examples of where the student should be at the start and the end of each step.*
 
